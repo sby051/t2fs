@@ -1,6 +1,6 @@
-# create-svelte
+# t2sf-template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+The ultimate Svelte stack, powered by TypeScript, TailwindCSS, SvelteKit and Firebase.
 
 ## Creating a project
 
@@ -8,10 +8,7 @@ If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
 # create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+npx degit sby051/t2sf-template my-app
 ```
 
 ## Developing
