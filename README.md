@@ -1,6 +1,6 @@
-# t2sf
+# t2fs
 
-The ultimate Svelte stack, powered by TypeScript, TailwindCSS, SvelteKit and Firebase.
+The ultimate Svelte stack, powered by TypeScript, TailwindCSS, Firebase & SvelteKit.
 
 ## Creating a project
 
