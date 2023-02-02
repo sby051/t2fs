@@ -1,4 +1,4 @@
-# t2sf-template
+# t2sf
 
 The ultimate Svelte stack, powered by TypeScript, TailwindCSS, SvelteKit and Firebase.
 
