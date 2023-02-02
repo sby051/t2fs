@@ -8,7 +8,7 @@ If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
 # create a new project in the current directory
-npx degit sby051/t2sf-template my-app
+npx degit sby051/t2sf <app-name>
 ```
 
 ## Developing
