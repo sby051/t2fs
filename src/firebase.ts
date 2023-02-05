@@ -13,13 +13,13 @@ import {
 } from "firebase/firestore";
 
 const FIREBASE_CONFIG = {
-    apiKey: "AIzaSyAXD0Hi4PipmkFMxS1p5k6OHt4MfkssX7I",
-    authDomain: "clubs-at-setu.firebaseapp.com",
-    projectId: "clubs-at-setu",
-    storageBucket: "clubs-at-setu.appspot.com",
-    messagingSenderId: "402071521803",
-    appId: "1:402071521803:web:123d425975d00fd88f150e"
-  };
+	apiKey: "",
+	authDomain: "",
+	projectId: "",
+	storageBucket: "",
+	messagingSenderId: "",
+	appId: ""
+};
 
 const app = initializeApp(FIREBASE_CONFIG);
 export const auth = getAuth(app);
