@@ -6,9 +6,9 @@ import type { User } from "@types";
 import { writable } from "svelte/store";
 
 const user = writable<User | null>(null);
-export const authed = writable<boolean | null>(null);
+export const authed = writable<boolean | null>(null); // Used to check if user is logged in, null = pending
 
-// Boilerplate code for auth state change and user document update
+// Never use the user store to check auth state, use authed instead as it provides a null state for pending (so you can show a loading screen)
 
 // onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
 // 	if(!firebaseUser) {
