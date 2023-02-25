@@ -1,0 +1,1 @@
+import "@total-typescript/ts-reset"; // Applies to entire project
