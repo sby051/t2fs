@@ -2,18 +2,24 @@
 	"name": "t2fs",
   	"version": "0.0.1",
   	"private": true,
-  	"scripts": {
+	  "scripts": {
 		"dev": "vite dev",
+		"start": "vite dev",
 		"dev:host": "vite dev --host",
-		"build": "vite build",
-		"preview": "vite preview",
+		"env:pull": "npx dotenv-vault pull",
+		"env:push": "npx dotenv-vault push",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"test": "playwright test",
-		"test:unit": "vitest",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"fmt": "prettier --plugin-search-dir . --write ."
-  	},
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"deploy": "vercel deploy --prod --yes",
+		"deploy:preview": "vercel --prod --yes",
+		"fmt": "prettier --write --plugin-search-dir=. ./src/**/*.{js,ts,html,css,svelte,json}",
+		"fmt:check": "prettier --check --plugin-search-dir=. ./src/**/*.{js,ts,html,css,svelte,json}",
+		"git:update": "git add -A && git commit -m \"Update\" && git push"
+	},
   	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^1.0.2",
 		"@sveltejs/kit": "^1.3.9",
@@ -42,5 +48,6 @@
   	"dependencies": {
 		"sveltils": "^0.2.0",
 		"firebase": "^9.16.0",
+		"zod": "^3.20.6"
   	}
 }	
